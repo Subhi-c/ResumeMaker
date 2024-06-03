@@ -1,0 +1,46 @@
+{
+  "Sections": [
+    {
+      "id": 1,
+      "Title": "ContactDetails",
+      "inView": true,
+      "component": "ContactDetails"
+    },
+    {
+      "id": 2,
+      "Title": "Experience",
+      "inView": true,
+      "component": "Experience"
+    },
+    {
+      "id": 3,
+      "Title": "Skills",
+      "inView": true,
+      "component": "Skills"
+    },
+    {
+      "id": 4,
+      "Title": "Education",
+      "inView": false,
+      "component": "Education"
+    },
+    {
+      "id": 5,
+      "Title": "Languages",
+      "inView": false,
+      "component": "Languages"
+    },
+    {
+      "id": 6,
+      "Title": "Certificates",
+      "inView": false,
+      "component": "Certificates"
+    },
+    {
+      "id": 7,
+      "Title": "Awards",
+      "inView": false,
+      "component": "Awards"
+    }
+  ]
+}

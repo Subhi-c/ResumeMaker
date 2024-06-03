@@ -1,0 +1,99 @@
+{
+  "personal_details": {
+    "name": "John Doe",
+    "address": {
+      "street": "123 Main St",
+      "city": "Springfield",
+      "state": "IL",
+      "zip_code": "62701"
+    },
+    "phone_number": "555-123-4567",
+    "email": "johndoe@example.com",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "website": "https://www.johndoe.com"
+  },
+  "experience": [
+    {
+      "job_title": "Software Engineer",
+      "company": "Tech Solutions Inc.",
+      "location": "Chicago, IL",
+      "start_date": "January 2020",
+      "end_date": "Present",
+      "responsibilities": [
+        "Developed and maintained web applications using JavaScript, React, and Node.js.",
+        "Collaborated with cross-functional teams to design and implement new features.",
+        "Wrote unit and integration tests to ensure code quality."
+      ]
+    },
+    {
+      "job_title": "Junior Developer",
+      "company": "WebWorks",
+      "location": "New York, NY",
+      "start_date": "June 2017",
+      "end_date": "December 2019",
+      "responsibilities": [
+        "Assisted in the development of e-commerce websites using PHP and MySQL.",
+        "Worked on bug fixes and performance improvements.",
+        "Participated in code reviews and team meetings."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Illinois",
+      "location": "Urbana-Champaign, IL",
+      "graduation_year": 2017
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "HTML",
+    "CSS",
+    "PHP",
+    "MySQL",
+    "Git",
+    "Agile Development"
+  ],
+  "certifications": [
+    {
+      "name": "Certified JavaScript Developer",
+      "issuing_organization": "JavaScript Institute",
+      "issue_date": "May 2019"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native"
+    },
+    {
+      "language": "Spanish",
+      "proficiency": "Conversational"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Personal Portfolio Website",
+      "description": "A portfolio website to showcase my projects and skills.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "url": "https://www.johndoe.com/portfolio"
+    }
+  ],
+  "volunteer_experience": [
+    {
+      "role": "Volunteer Web Developer",
+      "organization": "Non-Profit Org",
+      "location": "Chicago, IL",
+      "start_date": "March 2018",
+      "end_date": "Present",
+      "responsibilities": [
+        "Maintained the organization’s website.",
+        "Implemented new features to improve user experience.",
+        "Provided technical support for website issues."
+      ]
+    }
+  ]
+}
