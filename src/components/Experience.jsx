@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import EditContent from "./EditContent";
 import Dummydata from "../DummyData.json";
 function Experience() {
   const [experience, setexperience] = useState([]);
@@ -10,7 +11,7 @@ function Experience() {
     <>
       <div>
         {experience.map((section, index) => (
-          <div>
+          <div key={index}>
             <h1>{section.job_title}</h1>
             <p>{section.company}</p>
             <p>{section.location}</p>
@@ -18,7 +19,7 @@ function Experience() {
             <p>{section.end_date}</p>
             <ul>
               {section.responsibilities.map((resp, respIndex) => (
-                <li>{resp}</li>
+                <li key={respIndex}>{resp}</li>
               ))}
             </ul>
           </div>

@@ -1,19 +1,22 @@
 import { useState, useEffect } from "react";
-import Dummydata from "../DummyData.json";
-function ContactDetails() {
-  const [Personal, setPersonal] = useState([]);
+import EditContent from "./EditContent";
+function ContactDetails({ ConData, setConData }) {
+  const [personal_details, setpersonal_details] = useState([]);
   useEffect(() => {
-    setPersonal(Dummydata.personal_details);
+    console.log(ConData, "personal_details");
+    //  / console.log(setConData.personal_details, "Dummydata.personal_details");
+    setpersonal_details(ConData.personal_details);
+    console.log(ConData, "personal_details after");
   });
   return (
     <>
       <div>
-        <h1>{Personal.name}</h1>
-        <p>{Personal.phone_number}</p>
-        <p>{Personal.email}</p>
-        <a href={Personal.linkedin}>{Personal.linkedin}</a>
+        <h1>{personal_details.name}</h1>
+        <p>{personal_details.phone_number}</p>
+        <p>{personal_details.email}</p>
+        <a href={personal_details.linkedin}>{personal_details.linkedin}</a>
         <br></br>
-        <a href={Personal.website}>{Personal.website}</a>
+        <a href={personal_details.website}>{personal_details.website}</a>
       </div>
     </>
   );

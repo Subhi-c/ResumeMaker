@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import EditContent from "./EditContent";
 import Dummydata from "../DummyData.json";
 function Skills() {
   const [skills, setskills] = useState([]);
@@ -8,9 +9,13 @@ function Skills() {
   });
   return (
     <>
-      {skills.map((skill) => (
-        <p>{skill}</p>
-      ))}
+      <div>
+        {skills.map((skill, index) => (
+          <div key={index}>
+            <p>{skill}</p>
+          </div>
+        ))}
+      </div>
     </>
   );
 }

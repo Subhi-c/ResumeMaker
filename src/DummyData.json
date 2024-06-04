@@ -1,12 +1,6 @@
 {
   "personal_details": {
     "name": "John Doe",
-    "address": {
-      "street": "123 Main St",
-      "city": "Springfield",
-      "state": "IL",
-      "zip_code": "62701"
-    },
     "phone_number": "555-123-4567",
     "email": "johndoe@example.com",
     "linkedin": "https://www.linkedin.com/in/johndoe",

@@ -35,7 +35,7 @@ function CreateResume() {
         Data={Data}
         setData={setData}
       />
-      <MainContent Data={Data} />
+      <MainContent Data={Data} setData={setData} />
     </>
   );
 }

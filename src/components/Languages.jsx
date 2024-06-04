@@ -1,3 +1,4 @@
+import EditContent from "./EditContent";
 function Languages() {
   return (
     <>
