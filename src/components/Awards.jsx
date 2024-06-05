@@ -1,5 +1,5 @@
 import EditContent from "./EditContent";
-function Awards() {
+function Awards({ ConData, setConData }) {
   return (
     <>
       <h2>Awards</h2>

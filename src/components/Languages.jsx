@@ -1,5 +1,5 @@
 import EditContent from "./EditContent";
-function Languages() {
+function Languages({ ConData, setConData }) {
   return (
     <>
       <h1>Languages</h1>

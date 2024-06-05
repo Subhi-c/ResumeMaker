@@ -1,9 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState } from "react";
-function EditContactDetails({ sec, Data, setData }) {
-  console.log(Data, "Data");
-  const [formData, setFormData] = useState(Data.personal_details);
+function EditContactDetails({
+  section,
+  ConData,
+  setConData,
+  editsection,
+  seteditsection,
+}) {
+  console.log(ConData, "ConData");
+  const [formData, setFormData] = useState(ConData.ContactDetails);
   console.log(formData, "form daa");
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -12,10 +18,11 @@ function EditContactDetails({ sec, Data, setData }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const updatedData = {
-      ...Data,
-      personal_details: formData,
+      ...ConData,
+      ContactDetails: formData,
     };
-    setData(updatedData);
+    setConData(updatedData);
+    seteditsection(false);
   };
   return (
     <>

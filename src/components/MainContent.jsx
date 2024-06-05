@@ -30,7 +30,11 @@ function MainContent({ Data, setData }) {
             section.inView && (
               <div key={index}>
                 <h2>{section.Title}</h2>
-                <EditContent section={section} Data={Data} setData={setData} />
+                <EditContent
+                  section={section}
+                  ConData={ConData}
+                  setConData={setConData}
+                />
                 {React.createElement(componentMap[section.component], {
                   ConData,
                   setConData,

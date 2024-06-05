@@ -7,8 +7,15 @@ import EditSkills from "./EditSkills";
 import EditLanguages from "./EditLanguages";
 import EditCertificates from "./EditCertificates";
 import EditEducation from "./EditEducation";
-function EditSectionPopup({ section, Data, setData }) {
-  let id = section.id;
+function EditSectionPopup({
+  section,
+  ConData,
+  setConData,
+  editsection,
+  seteditsection,
+}) {
+  let title = section.Title;
+  const [sectionData, setsectionnData] = useState([]);
   const componentMap = {
     EditContactDetails,
     EditSkills,
@@ -18,24 +25,22 @@ function EditSectionPopup({ section, Data, setData }) {
     EditAwards,
   };
   useEffect(() => {
-    console.log(id, "id");
+    console.log(title, "tit;e");
+    console.log(ConData[title], "ConData[title]");
+    setsectionnData(ConData[title]);
   });
   return (
     <>
-      {Data.map(
-        (sec, index) =>
-          id === sec.id && (
-            <div key={index}>
-              <h2>{sec.Title}</h2>
-              {/* <EditContent sec={sec} Data={Data} setData={setData} /> */}
-              {React.createElement(componentMap["Edit" + sec.component], {
-                sec,
-                Data,
-                setData,
-              })}
-            </div>
-          )
-      )}
+      <div>
+        <h2>{section.Title}</h2>
+        {React.createElement(componentMap["Edit" + section.component], {
+          section,
+          ConData,
+          setConData,
+          editsection,
+          seteditsection,
+        })}
+      </div>
     </>
   );
 }

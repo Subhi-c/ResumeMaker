@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import EditContent from "./EditContent";
 import Dummydata from "../DummyData.json";
-function Experience() {
+function Experience({ ConData, setConData }) {
   const [experience, setexperience] = useState([]);
   useEffect(() => {
-    setexperience(Dummydata.experience);
-    console.log(experience, "experience");
+    setexperience(ConData.experience);
+    console.log(experience, "experience from compnent");
   });
   return (
     <>

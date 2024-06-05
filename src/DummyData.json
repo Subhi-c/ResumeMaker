@@ -1,5 +1,5 @@
 {
-  "personal_details": {
+  "ContactDetails": {
     "name": "John Doe",
     "phone_number": "555-123-4567",
     "email": "johndoe@example.com",
@@ -40,7 +40,7 @@
       "graduation_year": 2017
     }
   ],
-  "skills": [
+  "Skills": [
     "JavaScript",
     "React",
     "Node.js",

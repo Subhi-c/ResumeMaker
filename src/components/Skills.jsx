@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import EditContent from "./EditContent";
 import Dummydata from "../DummyData.json";
-function Skills() {
+function Skills({ ConData, setConData }) {
   const [skills, setskills] = useState([]);
   useEffect(() => {
-    setskills(Dummydata.skills);
+    setskills(ConData.Skills);
     console.log(skills, "skills");
   });
   return (
