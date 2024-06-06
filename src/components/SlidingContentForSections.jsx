@@ -13,7 +13,7 @@ function SlidingContentForSections({ Data, setData }) {
         return section;
       });
     });
-    console.log(Data, "Data");
+    // console.log(Data, "Data");
   };
   function handleCustomSection() {
     setcustomSection(true);

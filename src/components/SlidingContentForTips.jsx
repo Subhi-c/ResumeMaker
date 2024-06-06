@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function SlidingContentForTips({ SlidingContent }) {
-  console.log("SlidingContent1", SlidingContent);
+  // console.log("SlidingContent1", SlidingContent);
   return (
     <>
       <div>

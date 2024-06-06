@@ -38,6 +38,12 @@
       "institution": "University of Illinois",
       "location": "Urbana-Champaign, IL",
       "graduation_year": 2017
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Illinois",
+      "location": "Urbana-Champaign, IL",
+      "graduation_year": 2017
     }
   ],
   "Skills": [

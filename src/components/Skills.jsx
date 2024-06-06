@@ -5,7 +5,7 @@ function Skills({ ConData, setConData }) {
   const [skills, setskills] = useState([]);
   useEffect(() => {
     setskills(ConData.Skills);
-    console.log(skills, "skills");
+    // console.log(skills, "skills");
   });
   return (
     <>

@@ -11,7 +11,7 @@ function SlidingDiv({
   Data,
   setData,
 }) {
-  console.log("SlidingConten2t", SlidingContent);
+  // console.log("SlidingConten2t", SlidingContent);
   const closeDiv = () => {
     setIsOpen(!isOpen);
   };

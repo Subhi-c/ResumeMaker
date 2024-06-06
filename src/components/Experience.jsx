@@ -5,7 +5,7 @@ function Experience({ ConData, setConData }) {
   const [experience, setexperience] = useState([]);
   useEffect(() => {
     setexperience(ConData.experience);
-    console.log(experience, "experience from compnent");
+    // console.log(experience, "experience from compnent");
   });
   return (
     <>

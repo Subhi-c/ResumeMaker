@@ -9,13 +9,13 @@
     {
       "id": 2,
       "Title": "Experience",
-      "inView": true,
+      "inView": false,
       "component": "Experience"
     },
     {
       "id": 3,
       "Title": "Skills",
-      "inView": true,
+      "inView": false,
       "component": "Skills"
     },
     {
@@ -27,7 +27,7 @@
     {
       "id": 5,
       "Title": "Languages",
-      "inView": false,
+      "inView": true,
       "component": "Languages"
     },
     {

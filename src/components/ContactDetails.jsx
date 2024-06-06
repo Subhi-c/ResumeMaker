@@ -3,10 +3,7 @@ import EditContent from "./EditContent";
 function ContactDetails({ ConData, setConData }) {
   const [ContactDetails, setContactDetails] = useState([]);
   useEffect(() => {
-    console.log(ConData, "ContactDetails");
-    //  / console.log(setConData.ContactDetails, "Dummydata.ContactDetails");
     setContactDetails(ConData.ContactDetails);
-    console.log(ConData, "ContactDetails after");
   });
   return (
     <>

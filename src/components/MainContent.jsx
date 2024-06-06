@@ -10,9 +10,9 @@ import Certificates from "./Certificates";
 import Awards from "./Awards";
 import DumData from "../DummyData.json";
 function MainContent({ Data, setData }) {
-  console.log(Data, "Data");
+  // console.log(Data, "Data");
   const [ConData, setConData] = useState(DumData);
-  console.log(ConData, "MAin personal_details");
+  // console.log(ConData, "MAin personal_details");
   const componentMap = {
     ContactDetails,
     Experience,

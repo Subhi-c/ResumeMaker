@@ -6,29 +6,23 @@ function EditSkills({
   editsection,
   seteditsection,
 }) {
-  console.log(ConData, "ConData");
+  // console.log(ConData, "ConData");
   const [formData, setFormData] = useState(ConData.Skills);
   const [newSkill, setnewSkill] = useState("");
   const [addNew, setaddNew] = useState(false);
-  console.log(formData, "form daa");
+  // console.log(formData, "form daa");
   const handleChange = (e) => {
-    // const { name, value } = e.target;
-    // setFormData({ ...formData, [name]: value });
-    // setFormData(FormData)
     setnewSkill(e.target.value);
   };
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const updatedData = {
-  //     ...ConData,
-  //     ContactDetails: formData,
-  //   };
-  //   setConData(updatedData);
-  //   seteditsection(false);
-  // };
   function handleAddSkill() {
-    // setFormData(FormData.push(newSkill));
-    setFormData((prevFormData) => [...prevFormData, newSkill]);
+    setFormData((prevFormData) => {
+      const updatedFormData = [...prevFormData, newSkill];
+      setConData((prevConData) => ({
+        ...prevConData,
+        Skills: updatedFormData,
+      }));
+      return updatedFormData;
+    });
     setnewSkill("");
     setaddNew(false);
   }
@@ -38,7 +32,10 @@ function EditSkills({
   function handleDeleteSkill(e) {
     let id = e.target.id;
     setFormData(formData.filter((_, index) => index != id));
-    console.log(e);
+    // console.log(e);
+  }
+  function handleCloseNew() {
+    seteditsection(false);
   }
   return (
     <>
@@ -66,6 +63,7 @@ function EditSkills({
       )}
       <div>
         <button onClick={handleAddNew}>Add NEW</button>
+        <button onClick={handleCloseNew}>Close</button>
       </div>
     </>
   );

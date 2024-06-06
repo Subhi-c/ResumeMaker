@@ -25,8 +25,8 @@ function EditSectionPopup({
     EditAwards,
   };
   useEffect(() => {
-    console.log(title, "tit;e");
-    console.log(ConData[title], "ConData[title]");
+    // console.log(title, "tit;e");
+    // console.log(ConData[title], "ConData[title]");
     setsectionnData(ConData[title]);
   });
   return (
