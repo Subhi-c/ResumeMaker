@@ -64,16 +64,7 @@
       "issue_date": "May 2019"
     }
   ],
-  "languages": [
-    {
-      "language": "English",
-      "proficiency": "Native"
-    },
-    {
-      "language": "Spanish",
-      "proficiency": "Conversational"
-    }
-  ],
+  "languages": ["English", "tamil"],
   "projects": [
     {
       "name": "Personal Portfolio Website",

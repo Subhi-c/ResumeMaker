@@ -12,8 +12,7 @@ function Languages({ ConData, setConData }) {
         {languages.map((lang, index) => (
           <div key={index}>
             <div>
-              <h3>{lang.language}</h3>
-              <p>{lang.proficiency}</p>
+              <h3>{lang}</h3>
             </div>
           </div>
         ))}

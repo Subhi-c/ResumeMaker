@@ -1,77 +1,79 @@
-import React, { useState } from "react";
-
-function EditLanguages() {
-  // Initialize state with an array of language objects
-  const [languages, setLanguages] = useState([
-    { language: "English", proficiency: "Fluent" },
-    { language: "Spanish", proficiency: "Intermediate" },
-  ]);
-
-  const [newLanguage, setNewLanguage] = useState({
-    language: "",
-    proficiency: "",
-  });
-
-  const handleChange = (e, index) => {
-    const { name, value } = e.target;
-    const updatedLanguages = languages.map((lang, i) =>
-      i === index ? { ...lang, [name]: value } : lang
-    );
-    setLanguages(updatedLanguages);
+import { useState } from "react";
+function EditLanguages({
+  section,
+  ConData,
+  setConData,
+  editsection,
+  seteditsection,
+}) {
+  // console.log(ConData, "ConData");
+  const [formData, setFormData] = useState(ConData.languages);
+  const [newlanguage, setnewlanguage] = useState("");
+  const [addNew, setaddNew] = useState(false);
+  // console.log(formData, "form daa");
+  const handleChange = (e) => {
+    setnewlanguage(e.target.value);
   };
-
-  const handleNewLanguageChange = (e) => {
-    const { name, value } = e.target;
-    setNewLanguage({ ...newLanguage, [name]: value });
-  };
-
-  const handleAddLanguage = () => {
-    setLanguages([...languages, newLanguage]);
-    setNewLanguage({ language: "", proficiency: "" });
-  };
-
+  function handleAddlanguage() {
+    setFormData((prevFormData) => {
+      const updatedFormData = [...prevFormData, newlanguage];
+      setConData((prevConData) => ({
+        ...prevConData,
+        languages: updatedFormData,
+      }));
+      return updatedFormData;
+    });
+    setnewlanguage("");
+    setaddNew(false);
+  }
+  function handleAddNew() {
+    setaddNew(true);
+  }
+  function handleDeletelanguage(e) {
+    ////////// DOesnot work properly Check this //////////
+    let id = e.target.id;
+    // setFormData(formData.filter((_, index) => index != id));
+    setFormData((prevFormData) => {
+      const updatedFormData = [...prevFormData, newlanguage];
+      setConData((prevConData) => ({
+        ...prevConData,
+        languages: updatedFormData,
+      }));
+      return updatedFormData;
+    });
+  }
+  function handleCloseNew() {
+    seteditsection(false);
+  }
   return (
-    <div>
-      <h2>Languages</h2>
-      <ul>
-        {languages.map((lang, index) => (
-          <li key={index}>
-            <input
-              type="text"
-              name="language"
-              value={lang.language}
-              onChange={(e) => handleChange(e, index)}
-              placeholder="Language"
-            />
-            <input
-              type="text"
-              name="proficiency"
-              value={lang.proficiency}
-              onChange={(e) => handleChange(e, index)}
-              placeholder="Proficiency"
-            />
-          </li>
-        ))}
-      </ul>
+    <>
       <div>
-        <input
-          type="text"
-          name="language"
-          value={newLanguage.language}
-          onChange={handleNewLanguageChange}
-          placeholder="New Language"
-        />
-        <input
-          type="text"
-          name="proficiency"
-          value={newLanguage.proficiency}
-          onChange={handleNewLanguageChange}
-          placeholder="New Proficiency"
-        />
-        <button onClick={handleAddLanguage}>Add Language</button>
+        {formData.map((language, index) => (
+          <div key={index}>
+            <input type="text" value={language} />
+            <button id={index} onClick={handleDeletelanguage}>
+              X
+            </button>
+          </div>
+        ))}
       </div>
-    </div>
+      {addNew && (
+        <div>
+          <input
+            type="text"
+            name="newItem"
+            id="newItem"
+            value={newlanguage}
+            onChange={handleChange}
+          />
+          <button onClick={handleAddlanguage}>Save</button>
+        </div>
+      )}
+      <div>
+        <button onClick={handleAddNew}>Add NEW</button>
+        <button onClick={handleCloseNew}>Close</button>
+      </div>
+    </>
   );
 }
-
 export default EditLanguages;
