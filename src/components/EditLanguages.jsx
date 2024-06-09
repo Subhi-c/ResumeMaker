@@ -30,11 +30,10 @@ function EditLanguages({
     setaddNew(true);
   }
   function handleDeletelanguage(e) {
-    ////////// DOesnot work properly Check this //////////
     let id = e.target.id;
-    // setFormData(formData.filter((_, index) => index != id));
     setFormData((prevFormData) => {
-      const updatedFormData = [...prevFormData, newlanguage];
+      const updatedFormData = prevFormData.filter((_, index) => index != id);
+      // Update ConData with the latest formData
       setConData((prevConData) => ({
         ...prevConData,
         languages: updatedFormData,
