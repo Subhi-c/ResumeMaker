@@ -62,6 +62,11 @@
       "name": "Certified JavaScript Developer",
       "issuing_organization": "JavaScript Institute",
       "issue_date": "May 2019"
+    },
+    {
+      "name": "Certified Java Developer",
+      "issuing_organization": "Udemy",
+      "issue_date": "May 2020"
     }
   ],
   "languages": ["English", "tamil"],

@@ -27,13 +27,13 @@
     {
       "id": 5,
       "Title": "Languages",
-      "inView": true,
+      "inView": false,
       "component": "Languages"
     },
     {
       "id": 6,
       "Title": "Certificates",
-      "inView": false,
+      "inView": true,
       "component": "Certificates"
     },
     {
