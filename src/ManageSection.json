@@ -3,7 +3,7 @@
     {
       "id": 1,
       "Title": "ContactDetails",
-      "inView": true,
+      "inView": false,
       "component": "ContactDetails"
     },
     {
@@ -33,13 +33,13 @@
     {
       "id": 6,
       "Title": "Certificates",
-      "inView": true,
+      "inView": false,
       "component": "Certificates"
     },
     {
       "id": 7,
       "Title": "Awards",
-      "inView": false,
+      "inView": true,
       "component": "Awards"
     }
   ]

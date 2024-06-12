@@ -15,6 +15,7 @@ function EditSkills({
     setnewSkill(e.target.value);
   };
   function handleAddSkill() {
+    if (newSkill === "") return;
     setFormData((prevFormData) => {
       const updatedFormData = [...prevFormData, newSkill];
       setConData((prevConData) => ({

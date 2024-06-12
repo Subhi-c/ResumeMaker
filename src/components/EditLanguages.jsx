@@ -15,6 +15,7 @@ function EditLanguages({
     setnewlanguage(e.target.value);
   };
   function handleAddlanguage() {
+    if (newlanguage === "") return;
     setFormData((prevFormData) => {
       const updatedFormData = [...prevFormData, newlanguage];
       setConData((prevConData) => ({

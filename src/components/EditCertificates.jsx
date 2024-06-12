@@ -23,6 +23,14 @@ function EditCertifications({
   };
 
   const handleAddCertification = () => {
+    if (
+      newCertification.name ||
+      newCertification.issuing_organization ||
+      newCertification.issue_date === ""
+    ) {
+      console.log("not updated");
+      return;
+    }
     const updatedCertifications = [...formData, newCertification];
     setFormData(updatedCertifications);
     setConData((prevConData) => ({

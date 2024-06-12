@@ -91,5 +91,37 @@
         "Provided technical support for website issues."
       ]
     }
+  ],
+  "awards": [
+    {
+      "title": "Employee of the Year",
+      "organization": "Tech Solutions Inc.",
+      "date": "2022-11",
+      "description": "Recognized for outstanding performance and dedication to the company's mission and goals."
+    },
+    {
+      "title": "Best Innovator",
+      "organization": "WebWorks",
+      "date": "2021-02",
+      "description": "Awarded for creating and implementing a new system that improved project workflow and efficiency."
+    },
+    {
+      "title": "Community Service Award",
+      "organization": "Neighborhood Volunteers",
+      "date": "2020-03",
+      "description": "Honored for significant contributions to community development and volunteer work."
+    },
+    {
+      "title": "Top Salesperson",
+      "organization": "Retail Pro Inc.",
+      "date": "2019-04",
+      "description": "Achieved the highest sales figures in the company for the year."
+    },
+    {
+      "title": "Leadership Excellence Award",
+      "organization": "Leadership Council",
+      "date": "2018-05",
+      "description": "Recognized for exceptional leadership skills and ability to motivate and lead a team to success."
+    }
   ]
 }

@@ -7,6 +7,7 @@ import EditSkills from "./EditSkills";
 import EditLanguages from "./EditLanguages";
 import EditCertificates from "./EditCertificates";
 import EditEducation from "./EditEducation";
+import EditExperience from "./EditExperience";
 function EditSectionPopup({
   section,
   ConData,
@@ -23,6 +24,7 @@ function EditSectionPopup({
     EditCertificates,
     EditEducation,
     EditAwards,
+    EditExperience,
   };
   useEffect(() => {
     // console.log(title, "tit;e");

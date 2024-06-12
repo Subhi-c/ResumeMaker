@@ -22,6 +22,13 @@ function EditEducation({
     }));
   };
   function handleAddEducation() {
+    if (
+      newEducation.degree ||
+      newEducation.institution ||
+      newEducation.location ||
+      newEducation.graduation_year === ""
+    )
+      return;
     const updatedCertifications = [...formData, newEducation];
     setFormData(updatedCertifications);
     setConData((prevConData) => ({
