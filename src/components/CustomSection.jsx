@@ -23,7 +23,9 @@ function CustomSection({ Data, setData, setcustomSection }) {
           value={Title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <button onClick={saveCustomSection}>Save</button>
+        <button className="option" onClick={saveCustomSection}>
+          Save
+        </button>
       </div>
     </>
   );

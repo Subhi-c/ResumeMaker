@@ -92,6 +92,7 @@ function EditCertifications({
                 readOnly
               />
               <button
+                className="option"
                 type="button"
                 onClick={() => handleDeleteCertification(index)}
               >
@@ -125,12 +126,16 @@ function EditCertifications({
             placeholder="Issue Date"
             required
           />
-          <button type="button" onClick={handleAddCertification}>
+          <button
+            className="option"
+            type="button"
+            onClick={handleAddCertification}
+          >
             Add Certification
           </button>
         </div>
         <div>
-          <button type="submit" onClick={handlesave}>
+          <button className="option" type="submit" onClick={handlesave}>
             Save
           </button>
         </div>

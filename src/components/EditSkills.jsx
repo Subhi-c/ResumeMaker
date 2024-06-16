@@ -44,7 +44,7 @@ function EditSkills({
         {formData.map((skill, index) => (
           <div key={index}>
             <input type="text" value={skill} />
-            <button id={index} onClick={handleDeleteSkill}>
+            <button className="option" id={index} onClick={handleDeleteSkill}>
               X
             </button>
           </div>
@@ -59,12 +59,18 @@ function EditSkills({
             value={newSkill}
             onChange={handleChange}
           />
-          <button onClick={handleAddSkill}>Save</button>
+          <button className="option" onClick={handleAddSkill}>
+            Save
+          </button>
         </div>
       )}
       <div>
-        <button onClick={handleAddNew}>Add NEW</button>
-        <button onClick={handleCloseNew}>Close</button>
+        <button className="option" onClick={handleAddNew}>
+          Add NEW
+        </button>
+        <button className="option" onClick={handleCloseNew}>
+          Close
+        </button>
       </div>
     </>
   );

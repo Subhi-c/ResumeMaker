@@ -11,7 +11,9 @@ function EditContent({ section, ConData, setConData }) {
   }
   return (
     <>
-      <button onClick={handleEditSection}>Edit Section</button>
+      <button className="option" onClick={handleEditSection}>
+        Edit Section
+      </button>
       {editsection && (
         <EditSectionPopup
           editsection={editsection}

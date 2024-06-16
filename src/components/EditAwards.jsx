@@ -100,7 +100,11 @@ function EditAwards({
                 value={award.date}
                 readOnly
               />
-              <button type="button" onClick={() => handleDeleteAwards(index)}>
+              <button
+                className="option"
+                type="button"
+                onClick={() => handleDeleteAwards(index)}
+              >
                 Delete
               </button>
             </li>
@@ -139,12 +143,12 @@ function EditAwards({
             placeholder="date"
             required
           />
-          <button type="button" onClick={handleAddAwards}>
+          <button className="option" type="button" onClick={handleAddAwards}>
             Add Awards
           </button>
         </div>
         <div>
-          <button type="submit" onClick={handlesave}>
+          <button className="option" type="submit" onClick={handlesave}>
             Save
           </button>
         </div>

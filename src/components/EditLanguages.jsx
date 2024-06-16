@@ -51,7 +51,11 @@ function EditLanguages({
         {formData.map((language, index) => (
           <div key={index}>
             <input type="text" value={language} />
-            <button id={index} onClick={handleDeletelanguage}>
+            <button
+              className="option"
+              id={index}
+              onClick={handleDeletelanguage}
+            >
               X
             </button>
           </div>
@@ -66,12 +70,18 @@ function EditLanguages({
             value={newlanguage}
             onChange={handleChange}
           />
-          <button onClick={handleAddlanguage}>Save</button>
+          <button className="option" onClick={handleAddlanguage}>
+            Save
+          </button>
         </div>
       )}
       <div>
-        <button onClick={handleAddNew}>Add NEW</button>
-        <button onClick={handleCloseNew}>Close</button>
+        <button className="option" onClick={handleAddNew}>
+          Add NEW
+        </button>
+        <button className="option" onClick={handleCloseNew}>
+          Close
+        </button>
       </div>
     </>
   );

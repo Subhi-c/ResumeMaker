@@ -16,26 +16,32 @@ function CreateResume() {
   }, []);
   return (
     <>
-      <MyTitle />
-      <Options
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        SlidingContent={SlidingContent}
-        setSlidingContent={setSlidingContent}
-        userOption={userOption}
-        setuserOption={setuserOption}
-      />
-      <SlidingDiv
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        SlidingContent={SlidingContent}
-        setSlidingContent={setSlidingContent}
-        userOption={userOption}
-        setuserOption={setuserOption}
-        Data={Data}
-        setData={setData}
-      />
-      <MainContent Data={Data} setData={setData} />
+      <main>
+        <div className="TitleCenter">
+          <MyTitle />
+          <Options
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            SlidingContent={SlidingContent}
+            setSlidingContent={setSlidingContent}
+            userOption={userOption}
+            setuserOption={setuserOption}
+          />
+        </div>
+        <SlidingDiv
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          SlidingContent={SlidingContent}
+          setSlidingContent={setSlidingContent}
+          userOption={userOption}
+          setuserOption={setuserOption}
+          Data={Data}
+          setData={setData}
+        />
+        <div className="mainContent">
+          <MainContent Data={Data} setData={setData} />
+        </div>
+      </main>
     </>
   );
 }

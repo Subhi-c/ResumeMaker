@@ -134,6 +134,7 @@ function EditExperience({
                   ))}
                 </ul>
                 <button
+                  className="option"
                   type="button"
                   onClick={() => handleDeleteExperience(index)}
                 >
@@ -191,7 +192,11 @@ function EditExperience({
                 onChange={(e) => setNewResponsibility(e.target.value)}
                 placeholder="New Responsibility"
               />
-              <button type="button" onClick={handleAddResponsibility}>
+              <button
+                className="option"
+                type="button"
+                onClick={handleAddResponsibility}
+              >
                 Add Responsibility
               </button>
             </div>
@@ -200,12 +205,18 @@ function EditExperience({
                 <li key={index}>{resp}</li>
               ))}
             </ul>
-            <button type="button" onClick={handleAddExperience}>
+            <button
+              className="option"
+              type="button"
+              onClick={handleAddExperience}
+            >
               Add Experience
             </button>
           </div>
           <div>
-            <button type="submit">Save</button>
+            <button className="option" type="submit">
+              Save
+            </button>
           </div>
         </form>
       </div>

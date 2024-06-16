@@ -3,37 +3,37 @@
     {
       "id": 1,
       "Title": "ContactDetails",
-      "inView": false,
+      "inView": true,
       "component": "ContactDetails"
     },
     {
       "id": 2,
       "Title": "Experience",
-      "inView": false,
+      "inView": true,
       "component": "Experience"
     },
     {
       "id": 3,
       "Title": "Skills",
-      "inView": false,
+      "inView": true,
       "component": "Skills"
     },
     {
       "id": 4,
       "Title": "Education",
-      "inView": false,
+      "inView": true,
       "component": "Education"
     },
     {
       "id": 5,
       "Title": "Languages",
-      "inView": false,
+      "inView": true,
       "component": "Languages"
     },
     {
       "id": 6,
       "Title": "Certificates",
-      "inView": false,
+      "inView": true,
       "component": "Certificates"
     },
     {

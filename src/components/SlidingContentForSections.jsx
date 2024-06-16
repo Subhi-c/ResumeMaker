@@ -47,7 +47,9 @@ function SlidingContentForSections({ Data, setData }) {
         ""
       )}
       <div>
-        <button onClick={handleCustomSection}>Add Custom Section</button>
+        <button className="option" onClick={handleCustomSection}>
+          Add Custom Section
+        </button>
       </div>
     </>
   );

@@ -19,15 +19,17 @@ function Options({
 
   return (
     <>
-      <div>
-        <div>
-          <button onClick={() => toggleDiv("Temp")}>Templates</button>
-          <button onClick={() => toggleDiv("M")}>Manage Section</button>
-          <button onClick={() => toggleDiv("T")}>Tips</button>
-        </div>
-        <div>
-          <button>Download Resume</button>
-        </div>
+      <div className="Options">
+        <button className="option" onClick={() => toggleDiv("Temp")}>
+          <strong>Templates</strong>
+        </button>
+        <button className="option" onClick={() => toggleDiv("M")}>
+          Manage Section
+        </button>
+        <button className="option" onClick={() => toggleDiv("T")}>
+          Tips
+        </button>
+        <button className="option">Download Resume</button>
       </div>
     </>
   );

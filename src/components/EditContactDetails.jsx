@@ -94,7 +94,9 @@ function EditContactDetails({
         />
       </div>
       <div>
-        <button type="submit">Save</button>
+        <button className="option" type="submit">
+          Save
+        </button>
       </div>
     </form>
   );

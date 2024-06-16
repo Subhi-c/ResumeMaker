@@ -96,6 +96,7 @@ function EditEducation({
                   readOnly
                 />
                 <button
+                  className="option"
                   type="button"
                   onClick={() => handleDeleteEducation(index)}
                 >
@@ -137,12 +138,16 @@ function EditEducation({
               placeholder="graduation date"
               required
             />
-            <button type="button" onClick={handleAddEducation}>
+            <button
+              className="option"
+              type="button"
+              onClick={handleAddEducation}
+            >
               Add Education
             </button>
           </div>
           <div>
-            <button type="submit" onClick={handlesave}>
+            <button className="option" type="submit" onClick={handlesave}>
               Save
             </button>
           </div>
