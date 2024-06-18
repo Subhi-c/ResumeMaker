@@ -31,17 +31,25 @@ function EditSectionPopup({
     // console.log(ConData[title], "ConData[title]");
     setsectionnData(ConData[title]);
   });
+  function handleClose() {
+    seteditsection(false);
+  }
   return (
     <>
-      <div>
-        <h2>{section.Title}</h2>
-        {React.createElement(componentMap["Edit" + section.component], {
-          section,
-          ConData,
-          setConData,
-          editsection,
-          seteditsection,
-        })}
+      <div className="popup">
+        <div className="popup-inner">
+          <h2>{section.Title}</h2>
+          <button className="close-btn" onClick={handleClose}>
+            X
+          </button>
+          {React.createElement(componentMap["Edit" + section.component], {
+            section,
+            ConData,
+            setConData,
+            editsection,
+            seteditsection,
+          })}
+        </div>
       </div>
     </>
   );
